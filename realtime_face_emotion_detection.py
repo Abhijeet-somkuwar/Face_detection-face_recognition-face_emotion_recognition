@@ -16,8 +16,8 @@ import face_recognition
 webcam_video_stream = cv2.VideoCapture(0)
 
 #load the model and load the weights
-face_exp_model = model_from_json(open("datasets/facial_expression_model_structure.json","r",encoding="utf-8").read())
-face_exp_model.load_weights('datasets/facial_expression_model_weights.h5')
+face_exp_model = model_from_json(open("datasets/facial_expression_model_structure.json","r",encoding="utf-8").read()) #facial_expression_model_structure.json download this file (I had already uploaded) then add its path
+face_exp_model.load_weights('datasets/facial_expression_model_weights.h5')#facial_expression_model_weights.h5 download this file (I had already uploaded) then add its path
 #declare the emotions label
 emotions_label = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
